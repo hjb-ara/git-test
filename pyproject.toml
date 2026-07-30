@@ -1,0 +1,18 @@
+[project]
+name = "git-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "nuitka>=4.1.3",
+    "pyside6>=6.11.1",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+# PEP 8 命名規則(N)や 型ヒント(ANN), docstring(D) などをAIに意識させる設定
+select = ["E", "F", "W", "I", "N", "UP"]
